@@ -1,5 +1,7 @@
 # lab-TopCriminals
 
+![alt text](https://media.discordapp.net/attachments/941337363156721714/941338267406704720/lab-topcriminals.png)
+
 > About:
 
 ●  | A leaderboard to display and rank your servers Top 10 Criminal Organisations.
@@ -26,3 +28,5 @@
 ●  | ESX (Tested on Legacy version, should work fine on others.)
 
 ●  | lab-CreateMafia
+
+![alt text](https://media.discordapp.net/attachments/941337363156721714/941337695047778324/unknown.png?width=1618&height=910)
