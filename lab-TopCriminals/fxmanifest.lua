@@ -23,7 +23,6 @@ files {
 	'web/ui.html',
 	'web/styles.css',
 	'web/scripts.js',
-	'web/debounce.min.js',
 	'web/sound.wav',
 	'web/img/*.png',
 }
