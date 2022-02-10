@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+	user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+   
+
+   box-sizing: border-box;
+    user-select: none;
+    letter-spacing: 1px;
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	display: none;
+	color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(0deg, rgb(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
+}
+
+.body {
+	overflow: auto;
+	width: 80%;
+	height: 85%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-family: iransans;
+  max-width: 100%;
+  margin: auto;
+}
+
+.full-screen {
+  width: 100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+}
+
+.bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  z-index: -1;
+  background: #34e89e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #0f3443, rgba(52, 232, 158, 0.1));
+  background: linear-gradient(to bottom, #0f3443, rgba(52, 232, 158, 0.1));
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.holder {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.0);
+  transition: 100ms;
+  background-color: rgba(0, 0, 0, 0.0);
+  width: 30%;
+  height: 80%;
+  left: 35%;
+  top: 5%;
+  border-radius: 10px;
+  position: absolute;
+  background-image: url('img/holder.png');
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.table-holder {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  transition: 100ms;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 90%;
+  height: 60%;
+  left: 5%;
+  top: 36%;
+  border-radius: 10px;
+  position: absolute;
+  padding-top: 2%;
+  float:bottom;
+}
+
+.list {
+  margin-left: 2%;
+}
+
+table, th, td {
+  border-right:1px solid rgba(255, 255, 255, 0.2);
+  border-collapse: collapse;
+}
+
+tr {
+  height:45px;
+  transition: 100ms;
+}
+
+tr:nth-child(2) {
+  background-color: rgba(255,215,0,0.4);
+  background:linear-gradient(to right, rgba(191, 149, 63, 0.0), rgba(252, 246, 186, 0.3), rgba(179, 135, 41, 0.6), rgba(251, 245, 183, 0.6), rgba(170, 119, 28, 0.9));
+}
+
+tr:nth-child(3) {
+  background-color: #bdd4e7;
+  background:linear-gradient(to right, rgba(189, 212, 231, 0.0), rgba(189, 212, 231, 0.3), rgba(134, 147, 171, 0.6), rgba(134, 147, 171, 0.9));
+}
+
+tr:nth-child(4) {
+  background-color: #bdd4e7;
+  background:linear-gradient(to right, rgba(205, 127, 50, 0.0), rgba(190, 112, 35, 0.3), rgba(175, 97, 20, 0.6), rgba(94, 60, 27, 0.9));
+}
+
+tr:hover {background-color: rgba(255,255,255,0.2);}
+
+.text {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1vw;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
+}
+
+.btn {
+  width: 5%;
+  height: 5%;
+  position: absolute;
+	left: 50%;
+	top: 90%;
+	transform: translate(-50%, -50%);
+  text-align:center;
+}
+
+.close{
+  max-height: 100%;
+  max-width: 100%;
+	padding: 3px;
+  transition: 50ms;
+  opacity: 0.8;
+}
+.close:hover{
+	padding: 3px;
+  transform: scale(1.2);
+  filter: drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.7));
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #4acad3,0px 0px 1px #4acad3;}
+  to{text-shadow:0px 0px 10px #4acad3,0px 0px 10px #4acad3;}
+}

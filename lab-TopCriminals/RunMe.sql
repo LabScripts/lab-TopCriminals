@@ -1,0 +1,1 @@
+ALTER TABLE `jobs` ADD `score` INT NOT NULL DEFAULT 0 AFTER `label`;
