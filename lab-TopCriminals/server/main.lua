@@ -7,7 +7,7 @@ ESX.RegisterServerCallback('lab-TopCriminals:getData', function(source, cb)
     MySQL.Async.fetchAll('SELECT * FROM jobs ORDER BY score DESC',{}, function(result)   
         for k, v in pairs(result) do
             local label = v.label
-            local xp = v.score
+            local score = v.score
             local type = v.type
             table.insert(data, {label = label, score = score, type = type})
         end
